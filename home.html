@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navigation"> 
+        
+        <ul >
+            <li class="list active">
+                <a href="#Home">
+                    
+                    <span class="icon">
+                        <i class="ri-home-2-line"></i>
+                    </span>
+                    <span class="text">Home</span>
+                    
+                </a> 
+            </li>
+            
+            <li class="list">
+                <a href="#About">
+                    <span class="icon">
+                        <i class="ri-question-line"></i>
+                    </span>
+                    <span class="text">About</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#Profile">
+                    <span class="icon">
+                        <i class="ri-user-line"></i>
+                    </span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
+
+            <li class="list ">
+                <a href="#Contact">
+                    <span class="icon">
+                        <i class="ri-mail-line"></i>
+                    </span>
+                    <span class="text">Contact</span>
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+    <section>
+<!-- ------home-------- -->
+<div id="Home">
+    <div class="container">
+        <img src="" alt="">
+        <span class="h-text">Hello,<br>its Shain Maharjan.<br> Nice to see you here!</span>
+       
+    </div>
+</div>
+    <div id="About">about
+    </div>
+</div>
+    <div id="Profile">hey
+    </div>
+</div>
+    <div id="Contact">contact me
+    </div>
+</section>
+</body>
+<script >
+    const list = document.querySelectorAll('.list');
+function activeLink(){
+list.forEach((item) =>
+item.classList.remove('active'));
+this.classList.add('active')
+}
+item.forEach((item) =>
+item.addEventListener('click', activeLink)); 
+</script>
+</html>

@@ -1,0 +1,220 @@
+html{
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    margin:0;
+    height:auto;
+}
+nav{
+
+    position:fixed;
+    bottom:1vh;
+    
+  
+    width: 100%;
+  
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+   
+   
+    background-color: rgba(255, 255, 255, 0);
+
+}
+nav ul{
+    background-color: rgb(101, 97, 96);
+    width: auto;
+    border-radius:3vw;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;  
+   padding: 0 3VH 0 3VH;
+   
+        
+}
+
+nav ul li{
+    height: auto;
+    padding: 0 1vw;
+    /* margin: 0 1VH ; */
+    text-decoration: none;
+    list-style: none;
+   
+ }
+
+ nav ul li a span.icon{
+    transform: translateY(10%);
+    color: aliceblue;
+    /* position: relative; */
+    display: flex;
+   
+    padding:  1VH 0 1vh 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: 0.5s;
+   
+}
+nav ul li.active a span.icon{
+    transform: translateY(-15%);
+  /* position: relative; */
+  
+    color: rgb(255, 255, 255);
+    text-shadow:0 0 0.8rem #ffffff, 0 0  2rem #efef8c;
+}
+nav ul li a span.text{
+   /* position: absolute; */
+   /* Transform: translateY(-20%); */
+   background-color: rgba(133, 199, 211, 0) ;
+   /* top:-1.4rem; */
+    /* padding: 0.5 2VW 0.5VW 2VW; */
+   font-size: 1.4rem;
+   font-weight: bold;
+   letter-spacing: 0.1rem;
+   color: rgba(255, 255, 255, 0.829);
+  /* width: 7.6rem;
+  border-radius: 0.5rem; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.6s;
+   opacity: 1; 
+   width: 5.5rem;
+   
+}
+nav ul li.active a span.text{
+    transform: translateY(-20%);
+    /* position: relative; */
+    
+    /* top: -2rem; */
+    background-color: rgba(255, 255, 255, 0) ;
+    text-shadow:0 0 0.1rem #ffffff;
+    opacity: 1;
+        color: rgb(255, 255, 255);
+}   
+  ul span.empty-box{
+    position:fixed;
+    bottom: vh;
+   left:-6vh ;
+    width: 8vh;
+    height: 8vh;
+    background:  rgb(226, 100, 50);
+    border-radius: 50%  ;
+    opacity:1 ;
+    transform: translateY(-3rem);
+   
+}
+/* .indicator::before{
+    content: '';
+    position: absolute;
+    top:-1.29rem ;
+    left: 34vw;
+    height: 2.4rem;
+    width: 2.4rem;
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 1.6em 1.2rem rgb(101, 97, 96);
+
+     
+
+}
+.indicator::after{
+    content: '';
+    position: absolute;
+    top:-1.68rem ;
+    left: 42vw;
+    height: 2.4rem;
+    width: 2.4rem;
+    background-color: rgba(255, 59, 59, 0);
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: -1.6em 01.2rem rgb(101, 97, 96);
+     
+
+} */
+/* nav-animation */
+.navigation ul li:nth-child(1).active ~.indicator{
+    transform:translateX(calc(4.2rem * 0));
+}
+
+.navigation ul li:nth-child(2).active ~.indicator{
+    transform:translateX(calc(4.2rem * 1));
+}
+
+.navigation ul li:nth-child(3).active ~.indicator{
+    transform:translateX(calc(4.2rem * 2));
+}
+.navigation ul li:nth-child(4).active ~.indicator{
+    transform:translateX(calc(4.2rem * 3));
+}
+
+
+
+.content{
+    
+
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 27rem;
+}
+.container{
+    display: flex;
+    padding: 0; margin: 0;
+}
+
+
+ a{
+    text-decoration: none;
+   
+   
+}
+section > div{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    font-size: 2em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
+section > div:nth-child(1) {
+background-color: rgb(0, 0, 0);
+}
+
+section > div:nth-child(2) {
+background-color: rgb(165, 165, 165);
+}
+
+section > div:nth-child(3) {
+background-color: rgb(46, 40, 33);
+}
+
+section > div:nth-child(4) {
+background-color: rgb(63, 62, 141);
+}
+/*
+.nav-box{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; */
+    
+
+@media screen and (max-width: 1000px) {
+    nav{
+        bottom: 0vh;
+    }
+    nav ul{
+        width: 100%;
+        border-radius: 0%;
+    }
+    }
+    
