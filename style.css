@@ -176,12 +176,13 @@ nav ul li.active a span.text{
    
 }
 section > div{
-    height: 100vh;
+    height: 120vh;
+    width: 100%;
     display: grid;
     place-content: center;
     font-size: 2em;
     color: white;
-    text-transform: uppercase;
+    
     font-weight: 800;
 
 }
@@ -198,15 +199,106 @@ background-color: rgb(46, 40, 33);
 }
 
 section > div:nth-child(4) {
-background-color: rgb(63, 62, 141);
+background-color: rgba(2, 1, 3, 0.633);
 }
-/*
-.nav-box{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; */
+
+section > div:nth-child(5) {
+    background-color: rgb(63, 62, 141); 
+}
+/* -------------------------game --------------------------------*/
+#PLAYER_TEXT{
     
+    font-family: "permanent marker",cursive;
+    font-size: 3rem;
+    margin-top: 5vh;
+    text-shadow:    0 0 0.1rem #fff,
+    0 0 0.3rem #fff,
+   
+    0 0 0.4rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 1rem #bc13fe;
+   
+}
+
+.box{
+    height:12vh;
+    width: 12vh;
+    /* border:2px solid; */
+   font-size: 8vh;
+   text-align: center;
+    cursor: pointer;
+    /* line-height: 38vh; */
+ 
+  
+}
+#box{
+    
+    display: grid;
+    grid-template-columns: repeat(3, auto);   
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -40vh;
+ 
+    
+}
+
+#container{
+    font-family: "permanent marker",cursive;
+    text-align: center;
+    height: 100vh;
+    
+}
+
+button{
+    height: 3rem;
+    width: 10rem;
+    font-size: 2rem;
+    margin:12rem;
+    border-radius: 5rem;
+    border: none;
+    font-family: "permanent marker",cursive;
+    color: #fff;
+    display: flex;
+    margin-top: -30vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    text-shadow:  0 0 0.1rem #a534f0,
+    0 0 0.3rem #b122f9;
+    background-color:#46105f95;
+    box-shadow:  0 0 0.1rem #fff,
+    0 0 0.3rem #fff,
+   
+    0 0 0.4rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 1rem #bc13fe;
+   ;
+   
+}
+button:hover{
+    background-color:#89549ff1; 
+    cursor: pointer;
+}
+
+
+img{
+   height: 40vh;
+   
+  
+    
+}
+
+@media screen and (max-width:560px) {
+    #container{
+        width: fit-content;
+    }
+    button:hover{
+        background-color:#46105f95;  
+    }
+}
 
 @media screen and (max-width: 1000px) {
     nav{
@@ -216,5 +308,18 @@ background-color: rgb(63, 62, 141);
         width: 100%;
         border-radius: 0%;
     }
+    nav ul li a span.text{
+        font-size: 1rem;
+    }
     }
     
+@media screen and (max-width: 360px) {
+    nav ul li a span.icon{
+        font-size: 1.4rem;
+        padding: 0.1rem;
+    }
+    nav ul li a span.text{
+        font-size: 1rem;
+        width: 4rem;
+    }
+    }
