@@ -137,7 +137,7 @@ nav ul li.active a span.text{
     box-shadow: -1.6em 01.2rem rgb(101, 97, 96);
      
 
-} */
+} --*/
 /* nav-animation */
 .navigation ul li:nth-child(1).active ~.indicator{
     transform:translateX(calc(4.2rem * 0));
