@@ -177,7 +177,7 @@ nav ul li.active a span.text{
 }
 section > div{
     height: 120vh;
-    width: 100%;
+    width: 120%;
     display: grid;
     place-content: center;
     font-size: 2em;
