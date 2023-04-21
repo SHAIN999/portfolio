@@ -61,13 +61,13 @@ nav ul li{
     transition: 0.5s;
    
 }
-nav ul li.active a span.icon{
+/*nav ul li.active a span.icon{
     transform: translateY(-15%);
   /* position: relative; */
   
     color: rgb(255, 255, 255);
     text-shadow:0 0 0.8rem #ffffff, 0 0  2rem #efef8c;
-}
+}*/
 nav ul li a span.text{
    /* position: absolute; */
    /* Transform: translateY(-20%); */
@@ -88,7 +88,7 @@ nav ul li a span.text{
    width: 5.5rem;
    
 }
-nav ul li.active a span.text{
+/*nav ul li.active a span.text{
     transform: translateY(-20%);
     /* position: relative; */
     
@@ -97,7 +97,7 @@ nav ul li.active a span.text{
     text-shadow:0 0 0.1rem #ffffff;
     opacity: 1;
         color: rgb(255, 255, 255);
-}   
+}  */ 
   ul span.empty-box{
     position:fixed;
     bottom: vh;
